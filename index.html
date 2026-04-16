@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>RESio</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Space+Grotesk:wght@500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="logo">RESio</div>
+    <button class="theme" id="themeBtn">🌙</button>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Create your resume, the simple way</h1>
+    <p>Build a clean, ATS-friendly resume in seconds.</p>
+    <a href="#main" class="start">Start ↓</a>
+  </section>
+
+  <!-- MAIN -->
+  <section id="main" class="main">
+
+    <div class="box">
+
+      <!-- LEFT -->
+      <div class="left">
+
+        <h2>Enter Details</h2>
+
+        <!-- GENERAL -->
+        <h3 class="section">General Information</h3>
+        <input id="nameInput" placeholder="Full Name">
+        <input id="locationInput" placeholder="City, State">
+        <input id="emailInput" placeholder="Email">
+        <input id="phoneInput" placeholder="Phone">
+        <input id="linkedinInput" placeholder="LinkedIn URL">
+        <input id="portfolioInput" placeholder="Portfolio URL">
+
+        <!-- SUMMARY -->
+        <h3 class="section">Summary</h3>
+        <textarea id="summaryInput"></textarea>
+
+        <!-- SKILLS -->
+        <h3 class="section">Skills</h3>
+        <textarea id="skillsInput" placeholder="Web Technologies: HTML, CSS&#10;Frameworks: React, Node"></textarea>
+
+        <!-- PROJECTS -->
+        <h3 class="section toggle" id="projectsToggle">+ Projects</h3>
+        <div id="projectsSection" style="display:none;">
+          <div id="projectsContainer">
+            <div class="project-item">
+              <input class="projectTitle" placeholder="Project title">
+              <input class="projectLink" placeholder="Project link">
+              <input class="projectSource" placeholder="Source (Self / Freelance / Internship)">
+              <textarea class="projectDesc" placeholder="Write each point on a new line"></textarea>
+            </div>
+          </div>
+          <button id="addProject">+ Add Project</button>
+        </div>
+
+        <!-- EXPERIENCE -->
+        <h3 class="section toggle" id="expToggle">+ Experience</h3>
+        <div id="expSection" style="display:none;">
+          <div id="experienceContainer">
+            <div class="exp-item">
+              <input class="expRole" placeholder="Job Title">
+              <input class="expCompany" placeholder="Company Name">
+              <input class="expDates" placeholder="Start Date - End Date">
+              <textarea class="expDesc" placeholder="Write each point on a new line"></textarea>
+            </div>
+          </div>
+          <button id="addExperience">+ Add Experience</button>
+        </div>
+
+        <!-- EDUCATION -->
+        <h3 class="section toggle" id="eduToggle">+ Education</h3>
+        <div id="eduSection" style="display:none;">
+          <div id="educationContainer">
+            <div class="edu-item">
+              <input class="eduCollege" placeholder="College Name">
+              <input class="eduDegree" placeholder="Degree">
+              <input class="eduDates" placeholder="Start Date - End Date">
+            </div>
+          </div>
+          <button id="addEducation">+ Add Education</button>
+        </div>
+
+        <!-- OPTIONAL -->
+        <h3 class="section">Optional Sections</h3>
+
+        <!-- CERTIFICATIONS -->
+        <h4 class="toggle" id="certToggle">+ Certifications</h4>
+        <div id="certSection" style="display:none;">
+          <div id="certContainer">
+            <div class="cert-item">
+              <input class="certName" placeholder="Certification Name">
+              <input class="certIssuer" placeholder="Issuer">
+            </div>
+          </div>
+          <button id="addCert">+ Add Certification</button>
+        </div>
+
+        <!-- VOLUNTEERING -->
+        <h4 class="toggle" id="volToggle">+ Volunteering</h4>
+        <div id="volSection" style="display:none;">
+          <div id="volContainer">
+            <div class="vol-item">
+              <input class="volRole" placeholder="Role">
+              <input class="volOrg" placeholder="Organization">
+              <input class="volDates" placeholder="Date">
+              <textarea class="volDesc" placeholder="Write each point on a new line"></textarea>
+            </div>
+          </div>
+          <button id="addVol">+ Add Volunteering</button>
+        </div>
+
+        <!-- AWARDS -->
+        <h4 class="toggle" id="awardToggle">+ Awards</h4>
+        <div id="awardSection" style="display:none;">
+          <textarea id="awardInput" placeholder="Write each award on a new line"></textarea>
+        </div>
+
+        <!-- EXTRA -->
+        <h4 class="toggle" id="extraToggle">+ Extra Curricular</h4>
+        <div id="extraSection" style="display:none;">
+          <textarea id="extraInput" placeholder="Write each activity on a new line"></textarea>
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="right">
+
+        <div class="preview-box">
+
+          <div class="resume" id="resumePreview">
+
+            <div class="resume-header">
+              <h1 id="namePreview">Your Name</h1>
+              <p id="infoPreview"></p>
+              <p id="linksPreview"></p>
+            </div>
+
+            <h3>SUMMARY</h3>
+            <p id="summaryPreview"></p>
+
+            <h3>SKILLS</h3>
+            <p id="skillsPreview"></p>
+
+            <h3>PROJECTS</h3>
+            <div id="projectPreview"></div>
+
+            <h3>EXPERIENCE</h3>
+            <div id="expPreview"></div>
+
+            <h3>EDUCATION</h3>
+            <div id="eduPreview"></div>
+
+            <h3 id="certTitle" style="display:none;">CERTIFICATIONS</h3>
+            <div id="certPreview"></div>
+
+            <h3 id="volTitle" style="display:none;">VOLUNTEERING</h3>
+            <div id="volPreview"></div>
+
+            <h3 id="awardTitle" style="display:none;">AWARDS</h3>
+            <div id="awardPreview"></div>
+
+            <h3 id="extraTitle" style="display:none;">EXTRA CURRICULAR</h3>
+            <div id="extraPreview"></div>
+
+          </div>
+
+        </div>
+
+        <button class="download" id="downloadBtn">Download PDF</button>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- PDF CONTAINER -->
+  <div id="pdfContainer" style="position: fixed; top:-9999px;"></div>
+
+  <!-- LIBS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+
+  <!-- JS -->
+  <script src="script.js"></script>
+
+</body>
+</html>
