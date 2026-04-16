@@ -321,11 +321,21 @@ h4.toggle {
 /* FOOTER */
 footer {
   text-align: center;
-  padding: 20px;
-  color: var(--sub);
+  padding: 25px 0;
 }
 
-footer a {
+.footer-sub {
+  color: var(--sub);
+  font-size: 13px;
+}
+
+.footer-name {
   color: var(--text);
+  font-weight: 600;
   text-decoration: none;
+  font-size: 13px;
+}
+
+.footer-name:hover {
+  text-decoration: underline;
 }
