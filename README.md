@@ -2,8 +2,6 @@
 
 A simple resume builder made for students who don't want to stress about formatting.
 
----
-
 ## Why I built this
 
 Making a resume for the first time is confusing.
@@ -15,8 +13,6 @@ Will it pass ATS?
 I built RESio to solve this exact problem.
 
 Instead of worrying about layout, you just enter your details - and RESio structures everything into a clean, professional resume.
-
----
 
 ## What it does
 
@@ -32,8 +28,6 @@ Instead of worrying about layout, you just enter your details - and RESio struct
 - Download your resume as a PDF
 - Clean dark/light mode UI
 
----
-
 ## Tech Stack
 
 This project is built using:
@@ -44,8 +38,6 @@ This project is built using:
 
 No frameworks, no backend - everything runs in the browser. No irritating login/signup to use it.
 
----
-
 ## How it works
 
 - You enter your details on the left
@@ -54,13 +46,9 @@ No frameworks, no backend - everything runs in the browser. No irritating login/
 
 No data is stored. Everything stays on your device.
 
----
-
 ## Live Demo
 
 [View RESio](https://ayushwarrier.github.io/RESio/)
-
----
 
 ## Current Status
 
@@ -72,8 +60,6 @@ Planned improvements:
 - More resume templates
 - Session in works
 
----
-
 ## Open Source
 
 This project is open source.
@@ -83,14 +69,10 @@ If you have ideas, improvements, or find bugs - feel free to:
 - Suggest changes
 - Improve the UI/UX
 
----
-
 ## Created by
 
 Ayush Warrier  
 [LinkedIn](https://www.linkedin.com/in/ayush-warrier/)
-
----
 
 ## Final Note
 
