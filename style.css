@@ -1,4 +1,3 @@
-/* ROOT */
 :root {
   --bg: #0f0f0f;
   --card: #171717;
@@ -7,7 +6,6 @@
   --border: #2a2a2a;
 }
 
-/* LIGHT MODE */
 .light {
   --bg: #ffffff;
   --card: #f5f5f5;
@@ -16,21 +14,18 @@
   --border: #ddd;
 }
 
-/* RESET */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* BODY */
 body {
   font-family: 'Inter', sans-serif;
   background: var(--bg);
   color: var(--text);
 }
 
-/* HEADER */
 header {
   display: flex;
   justify-content: space-between;
@@ -49,7 +44,6 @@ header {
   cursor: pointer;
 }
 
-/* HERO */
 .hero {
   height: 80vh;
   display: flex;
@@ -77,12 +71,10 @@ header {
   border-radius: 8px;
 }
 
-/* MAIN */
 .main {
   padding: 60px 40px;
 }
 
-/* LAYOUT */
 .box {
   display: flex;
   gap: 40px;
@@ -92,7 +84,6 @@ header {
   border: 1px solid var(--border);
 }
 
-/* LEFT */
 .left {
   flex: 1;
   display: flex;
@@ -100,14 +91,12 @@ header {
   gap: 12px;
 }
 
-/* SECTION TITLE */
 .section {
   margin-top: 20px;
   font-size: 14px;
   color: var(--sub);
 }
 
-/* TOGGLE */
 .toggle {
   cursor: pointer;
   font-size: 14px;
@@ -120,7 +109,6 @@ header {
   transform: translateX(5px);
 }
 
-/* INPUTS */
 input, textarea {
   padding: 10px;
   border-radius: 8px;
@@ -135,7 +123,6 @@ textarea {
   resize: vertical;
 }
 
-/* BLOCKS */
 .project-item,
 .exp-item,
 .edu-item,
@@ -150,7 +137,6 @@ textarea {
   border-radius: 8px;
 }
 
-/* ADD BUTTONS */
 #addProject,
 #addExperience,
 #addEducation,
@@ -175,7 +161,6 @@ textarea {
   background: var(--border);
 }
 
-/* RIGHT */
 .right {
   flex: 1;
   display: flex;
@@ -184,14 +169,12 @@ textarea {
   overflow-x: auto;
 }
 
-/* PREVIEW */
 .preview-box {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-/* RESUME */
 .resume {
   background: #ffffff !important;
   color: #000000 !important;
@@ -202,7 +185,6 @@ textarea {
   line-height: 1.4;
 }
 
-/* HEADER */
 .resume-header {
   text-align: center;
   margin-bottom: 15px;
@@ -218,7 +200,6 @@ textarea {
   margin-top: 4px;
 }
 
-/* SECTION HEADINGS */
 .resume h3 {
   margin-top: 18px;
   font-size: 13px;
@@ -227,13 +208,11 @@ textarea {
   padding-bottom: 3px;
 }
 
-/* TEXT */
 .resume p {
   font-size: 12px;
   margin-top: 5px;
 }
 
-/* LINKS */
 .resume a {
   color: black;
   text-decoration: none;
@@ -243,7 +222,6 @@ textarea {
   text-decoration: underline;
 }
 
-/* PROJECT */
 .preview-project {
   margin-top: 8px;
 }
@@ -253,7 +231,6 @@ textarea {
   font-size: 12px;
 }
 
-/* EXPERIENCE / VOL */
 .preview-exp {
   margin-top: 8px;
 }
@@ -269,13 +246,11 @@ textarea {
   margin-top: 2px;
 }
 
-/* BULLETS */
 .preview-bullets {
   font-size: 12px;
   margin-top: 4px;
 }
 
-/* EDUCATION */
 .edu-row {
   display: flex;
   justify-content: space-between;
@@ -288,20 +263,17 @@ textarea {
   margin-top: 2px;
 }
 
-/* CERTIFICATIONS */
 #certPreview {
   font-size: 12px;
   margin-top: 5px;
 }
 
-/* FIX AWARDS + EXTRA FONT */
 #awardPreview,
 #extraPreview {
   font-size: 12px;
   margin-top: 5px;
 }
 
-/* DOWNLOAD */
 .download {
   margin-top: 15px;
   padding: 10px;
@@ -312,13 +284,11 @@ textarea {
   cursor: pointer;
 }
 
-/* OPTIONAL LABEL */
 h4.toggle {
   margin-top: 10px;
   font-size: 13px;
 }
 
-/* FOOTER */
 footer {
   text-align: center;
   padding: 25px 0;
@@ -338,49 +308,4 @@ footer {
 
 .footer-name:hover {
   text-decoration: underline;
-}
-
-@media (max-width: 768px) {
-
-  /* STACK LAYOUT */
-  .box {
-    flex-direction: column;
-    padding: 20px;
-  }
-
-  /* FULL WIDTH SECTIONS */
-  .left,
-  .right {
-    width: 100%;
-  }
-
-  /* RESUME FIX */
-  .resume {
-    width: 100%;
-    min-height: auto;
-    padding: 20px;
-  }
-
-  /* HERO TEXT */
-  .hero h1 {
-    font-size: 28px;
-    padding: 0 10px;
-  }
-
-  .hero p {
-    font-size: 14px;
-    padding: 0 10px;
-  }
-
-  /* BUTTON */
-  .start {
-    padding: 10px 18px;
-    font-size: 13px;
-  }
-
-  /* INPUTS */
-  input, textarea {
-    font-size: 14px;
-  }
-
 }
