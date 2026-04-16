@@ -1,0 +1,331 @@
+/* ROOT */
+:root {
+  --bg: #0f0f0f;
+  --card: #171717;
+  --text: #e5e5e5;
+  --sub: #a3a3a3;
+  --border: #2a2a2a;
+}
+
+/* LIGHT MODE */
+.light {
+  --bg: #ffffff;
+  --card: #f5f5f5;
+  --text: #111;
+  --sub: #555;
+  --border: #ddd;
+}
+
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* BODY */
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* HEADER */
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 40px;
+}
+
+.logo {
+  font-family: 'Space Grotesk', sans-serif;
+  font-size: 22px;
+}
+
+.theme {
+  background: none;
+  border: none;
+  color: var(--text);
+  cursor: pointer;
+}
+
+/* HERO */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 42px;
+}
+
+.hero p {
+  color: var(--sub);
+  max-width: 500px;
+}
+
+.start {
+  padding: 10px 20px;
+  background: var(--text);
+  color: var(--bg);
+  text-decoration: none;
+  border-radius: 8px;
+}
+
+/* MAIN */
+.main {
+  padding: 60px 40px;
+}
+
+/* LAYOUT */
+.box {
+  display: flex;
+  gap: 40px;
+  background: var(--card);
+  padding: 40px;
+  border-radius: 16px;
+  border: 1px solid var(--border);
+}
+
+/* LEFT */
+.left {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+/* SECTION TITLE */
+.section {
+  margin-top: 20px;
+  font-size: 14px;
+  color: var(--sub);
+}
+
+/* TOGGLE */
+.toggle {
+  cursor: pointer;
+  font-size: 14px;
+  color: var(--sub);
+  transition: 0.2s;
+}
+
+.toggle:hover {
+  color: var(--text);
+  transform: translateX(5px);
+}
+
+/* INPUTS */
+input, textarea {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  font-size: 13px;
+}
+
+textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+/* BLOCKS */
+.project-item,
+.exp-item,
+.edu-item,
+.vol-item,
+.cert-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 10px;
+  padding: 12px;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+/* ADD BUTTONS */
+#addProject,
+#addExperience,
+#addEducation,
+#addVol,
+#addCert {
+  margin-top: 10px;
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid var(--border);
+  background: transparent;
+  color: var(--text);
+  cursor: pointer;
+  font-size: 13px;
+}
+
+#addProject:hover,
+#addExperience:hover,
+#addEducation:hover,
+#addVol:hover,
+#addCert:hover {
+  border-color: var(--sub);
+  background: var(--border);
+}
+
+/* RIGHT */
+.right {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: auto;
+}
+
+/* PREVIEW */
+.preview-box {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* RESUME */
+.resume {
+  background: #ffffff !important;
+  color: #000000 !important;
+  width: 794px;
+  min-height: 1123px;
+  padding: 28px;
+  font-family: Arial, sans-serif;
+  line-height: 1.4;
+}
+
+/* HEADER */
+.resume-header {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.resume-header h1 {
+  font-size: 22px;
+  font-weight: bold;
+}
+
+.resume-header p {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* SECTION HEADINGS */
+.resume h3 {
+  margin-top: 18px;
+  font-size: 13px;
+  font-weight: bold;
+  border-bottom: 1px solid #000;
+  padding-bottom: 3px;
+}
+
+/* TEXT */
+.resume p {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* LINKS */
+.resume a {
+  color: black;
+  text-decoration: none;
+}
+
+.resume a:hover {
+  text-decoration: underline;
+}
+
+/* PROJECT */
+.preview-project {
+  margin-top: 8px;
+}
+
+.preview-project-title {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+/* EXPERIENCE / VOL */
+.preview-exp {
+  margin-top: 8px;
+}
+
+.preview-exp-header {
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.preview-exp-dates {
+  font-size: 11px;
+  color: #555;
+  margin-top: 2px;
+}
+
+/* BULLETS */
+.preview-bullets {
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+/* EDUCATION */
+.edu-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.edu-degree {
+  font-size: 12px;
+  margin-top: 2px;
+}
+
+/* CERTIFICATIONS */
+#certPreview {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* FIX AWARDS + EXTRA FONT */
+#awardPreview,
+#extraPreview {
+  font-size: 12px;
+  margin-top: 5px;
+}
+
+/* DOWNLOAD */
+.download {
+  margin-top: 15px;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: var(--text);
+  color: var(--bg);
+  cursor: pointer;
+}
+
+/* OPTIONAL LABEL */
+h4.toggle {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  color: var(--sub);
+}
+
+footer a {
+  color: var(--text);
+  text-decoration: none;
+}
