@@ -1,9 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // ======================
-  // INPUTS
-  // ======================
-
   const nameInput = document.getElementById("nameInput");
   const locationInput = document.getElementById("locationInput");
   const emailInput = document.getElementById("emailInput");
@@ -17,27 +13,15 @@ document.addEventListener("DOMContentLoaded", () => {
   const awardInput = document.getElementById("awardInput");
   const extraInput = document.getElementById("extraInput");
 
-  // ======================
-  // OPTIONAL INPUTS
-  // ======================
-
   const certContainer = document.getElementById("certContainer");
   const volContainer = document.getElementById("volContainer");
 
   const addCertBtn = document.getElementById("addCert");
   const addVolBtn = document.getElementById("addVol");
 
-  // ======================
-  // CONTAINERS
-  // ======================
-
   const projectsContainer = document.getElementById("projectsContainer");
   const experienceContainer = document.getElementById("experienceContainer");
   const educationContainer = document.getElementById("educationContainer");
-
-  // ======================
-  // BUTTONS
-  // ======================
 
   const addProjectBtn = document.getElementById("addProject");
   const addExperienceBtn = document.getElementById("addExperience");
@@ -45,10 +29,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const downloadBtn = document.getElementById("downloadBtn");
   const themeBtn = document.getElementById("themeBtn");
-
-  // ======================
-  // PREVIEW
-  // ======================
 
   const namePreview = document.getElementById("namePreview");
   const infoPreview = document.getElementById("infoPreview");
@@ -71,10 +51,6 @@ document.addEventListener("DOMContentLoaded", () => {
   const awardTitle = document.getElementById("awardTitle");
   const extraTitle = document.getElementById("extraTitle");
 
-  // ======================
-  // TOGGLE
-  // ======================
-
   function setupToggle(toggleId, sectionId) {
     const toggle = document.getElementById(toggleId);
     const section = document.getElementById(sectionId);
@@ -93,10 +69,6 @@ document.addEventListener("DOMContentLoaded", () => {
   setupToggle("volToggle", "volSection");
   setupToggle("awardToggle", "awardSection");
   setupToggle("extraToggle", "extraSection");
-
-  // ======================
-  // PROJECTS
-  // ======================
 
   addProjectBtn.addEventListener("click", () => {
     const div = document.createElement("div");
@@ -148,10 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return html;
   }
 
-  // ======================
-  // EXPERIENCE
-  // ======================
-
   addExperienceBtn.addEventListener("click", () => {
     const div = document.createElement("div");
     div.className = "exp-item";
@@ -193,10 +161,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return html;
   }
 
-  // ======================
-  // EDUCATION
-  // ======================
-
   addEducationBtn.addEventListener("click", () => {
     const div = document.createElement("div");
     div.className = "edu-item";
@@ -232,10 +196,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     return html;
   }
-
-  // ======================
-  // VOLUNTEERING
-  // ======================
 
   addVolBtn.addEventListener("click", () => {
     const div = document.createElement("div");
@@ -278,10 +238,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return html;
   }
 
-  // ======================
-  // CERTIFICATIONS
-  // ======================
-
   addCertBtn.addEventListener("click", () => {
     const div = document.createElement("div");
     div.className = "cert-item";
@@ -310,10 +266,6 @@ document.addEventListener("DOMContentLoaded", () => {
     return html;
   }
 
-  // ======================
-  // UPDATE
-  // ======================
-
   function updateResume() {
 
     namePreview.innerText = (nameInput.value || "Your Name").toUpperCase();
@@ -334,7 +286,6 @@ document.addEventListener("DOMContentLoaded", () => {
     expPreview.innerHTML = getExperience();
     eduPreview.innerHTML = getEducation();
 
-    // VOL
     const volHTML = getVolunteering();
     if (volHTML.trim()) {
       volTitle.style.display = "block";
@@ -344,7 +295,6 @@ document.addEventListener("DOMContentLoaded", () => {
       volPreview.innerHTML = "";
     }
 
-    // CERT
     const certHTML = getCertifications();
     if (certHTML.trim()) {
       certTitle.style.display = "block";
@@ -353,8 +303,7 @@ document.addEventListener("DOMContentLoaded", () => {
       certTitle.style.display = "none";
       certPreview.innerHTML = "";
     }
-
-    // SIMPLE SECTIONS
+    
     function simple(input, preview, title) {
       if (input.value.trim()) {
         title.style.display = "block";
@@ -375,10 +324,6 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   attachListeners();
-
-  // ======================
-  // PDF (UNCHANGED)
-  // ======================
 
   downloadBtn.addEventListener("click", async () => {
 
@@ -412,10 +357,6 @@ document.addEventListener("DOMContentLoaded", () => {
     pdf.addImage(imgData, "JPEG", 0, 0, 794, 1123);
     pdf.save("RESio_Resume.pdf");
   });
-
-  // ======================
-  // THEME
-  // ======================
 
   themeBtn.addEventListener("click", () => {
     document.body.classList.toggle("light");
