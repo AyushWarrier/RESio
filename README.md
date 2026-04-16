@@ -69,11 +69,6 @@ If you have ideas, improvements, or find bugs - feel free to:
 - Suggest changes
 - Improve the UI/UX
 
-## Created by
-
-Ayush Warrier  
-[LinkedIn](https://www.linkedin.com/in/ayush-warrier/)
-
 ## Final Note
 
 This project is something I was searching for as a student.
